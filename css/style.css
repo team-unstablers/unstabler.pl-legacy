@@ -18,8 +18,11 @@ html, body, h1, h2 {
 
 html {
     width: 100%; height: 100%;
-    background: #ffcb32; 
-    background: linear-gradient(to bottom, #ffeb4c 0%, #ffcb32 100%);
+
+    background: #F7971E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     color: #282828;
 }
@@ -86,7 +89,24 @@ section.window > main {
 
 }
 
-section.window > main > code,
-section.window > main > pre {
+section.window > main code,
+section.window > main pre {
     font-size: 1.5em;
+    line-height: 1.25;
+}
+
+section.window > main a {
+    color: inherit;
+}
+
+section.window > main div.box {
+    display: flex;
+}
+
+section.window > main div.box > aside {
+    margin-right: 16px;
+}
+
+section.window > main div.box > pre {
+    margin: 0;
 }
