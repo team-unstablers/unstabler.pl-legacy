@@ -104,5 +104,6 @@ section.window > main div.box > aside {
 }
 
 section.window > main div.box > pre {
+    flex: 1;
     margin: 0;
 }
